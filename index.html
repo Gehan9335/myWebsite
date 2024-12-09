@@ -1,110 +1,161 @@
 <html lang="en">
-
-    
 <head>
 
-<style>
-.bn632-hover {
-  width: 160px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-  margin: 20px;
-  height: 55px;
-  text-align:center;
-  border: none;
-  background-size: 300% 100%;
-  border-radius: 50px;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding Image Gallery</title>
+  <style>
+    /* Container for the sliding images */
+    .slider-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      overflow: hidden;
+      border: 2px solid #ddd;
+    }
 
-.bn632-hover:hover {
-  background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
+    /* Wrapper that holds all the images */
+    .slider-wrapper {
+      display: flex;
+      width: 300%; /* 3 images, so width is 300% */
+      animation: slide 9s infinite;
+    }
 
-.bn632-hover:focus {
-  outline: none;
-}
+    /* Each image */
+    .slide {
+      width: 100%;
+      height: auto;
+    }
 
-.bn632-hover.bn19 {
-  background-image: linear-gradient(
-    to right,
-    #f5ce62,
-    #e43603,
-    #fa7199,
-    #e85a19
-  );
-  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
-}
-</style>
-
-
+    /* Animation to slide images */
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      33% {
+        transform: translateX(-100%);
+      }
+      66% {
+        transform: translateX(-200%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
 
 
 
+
+  <style>
+  
+  
+  
+  
+ 
+    
+  
+  
+  
+    body {
+      text-align: center;
+      background-image: linear-gradient(rgb(227, 6, 6), rgb(241, 237, 0), rgb(227, 6, 6));
+      min-width: 100%;
+      min-height: 100%;
+    }
+    .navbar {
+      overflow: hidden;
+      background-color: orange; /* Changed to orange */
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: black; /* Text color set to black for contrast */
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .bn632-hover {
+      width: 160px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 20px;
+      height: 55px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+      border-radius: 50px;
+      transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:hover {
+      background-position: 100% 0;
+    }
+
+    .bn632-hover:focus {
+      outline: none;
+    }
+
+    .bn632-hover.bn19 {
+      background-image: linear-gradient(
+        to right,
+        #f5ce62,
+        #e43603,
+        #fa7199,
+        #e85a19
+      );
+      box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    }
+
+  </style>
 </head>
 
-
-
 <body>
-<h1><h1 
-<h1> <h1 style="color:yellow;">All about Wukong</h1>
-<a href="/gehan9335.github.io/myWebsite/"><button class="bn632-hover bn19">About him</button></a> 
 
-<a href="https://gehan9335.github.io/myWebsite/"><button class="bn632-hover bn19">Yaoguais</button></a>
+  <!-- Navigation Menu -->
+  <div class="navbar">
+    <a href="#about"> All About Him</a>
+    <a href="#yaoguais">Yaoguais</a>
+    <a href="#game-trailer">Game Trailer</a>
+  </div>
 
-<img src="https://gwongzaukungfu.com/wp-content/uploads/2022/01/Rey-Mono-Sun-Wukong.jpg" <br><br><br><br>
+  <h1 style="color:yellow;">All about Sun Wukong</h1>
+  
 
+  <img src="https://gwongzaukungfu.com/wp-content/uploads/2022/01/Rey-Mono-Sun-Wukong.jpg" alt="Wukong Image"><br><br><br><br>
 
+  <h1 style="color:red;">Click to watch game, Black Myth Wukong, trailer.</h1>
 
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/u83VdXAVq08?si=vjr1_2Fs1-WZ46qy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h1><h1 style="color:red;">
-Click to watch game, Black Myth Wukong, trailer.
-</h1>
-
-
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u83VdXAVq08?si=vjr1_2Fs1-WZ46qy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<h1>
-All About Him
-</h1>
-
-<h4>
-Sun Wukong (Chinese: 孫悟空, Mandarin pronunciation: [swə́n ûkʰʊ́ŋ]), also known as the Monkey King, is a literary and religious figure best known as one of the main characters in the 16th-century Chinese novel Journey to the West.[1] In the novel, Sun Wukong is a monkey born from a stone who acquires supernatural powers through Taoist practices. After rebelling against heaven, he is imprisoned under a mountain by the Buddha.<br> <br> Five hundred years later, he accompanies the monk Tang Sanzang riding on the White Dragon Horse and two other disciples, Zhu Bajie and Sha Wujing, on a journey to obtain Buddhist sutras, known as the West or Western Paradise, where Buddha and his followers dwell.[2]
+  <h1>All About Him</h1>
+  <h4>
+    Sun Wukong (Chinese: 孫悟空, Mandarin pronunciation: [swə́n ûkʰʊ́ŋ]), also known as the Monkey King, is a literary and religious figure best known as one of the main characters in the 16th-century Chinese novel Journey to the West .[1] In the novel, Sun Wukong is a monkey born from a stone who acquires supernatural powers through Taoist practices. After rebelling against heaven, he is imprisoned under a mountain by the Buddha.<br> <br> Five hundred years later, he accompanies the monk Tang Sanzang riding on the White Dragon Horse and two other disciples, Zhu Bajie and Sha Wujing, on a journey to obtain Buddhist sutras, known as the West or Western Paradise, where Buddha and his followers dwell.[2]
 
 Sun Wukong possesses many abilities. He has supernatural strength and is able to support the weight of two heavy mountains on his shoulders while running "with the speed of a meteor".[3] He is extremely fast, able to travel 108,000 li (54,000 km, 34,000 mi) in one somersault.<br> <br>  He has vast memorization skills and can remember every monkey ever born. As king of the monkeys, it is his duty to keep track of and protect every monkey. Sun Wukong acquires the 72 Earthly Transformations, which allow him to access 72 unique powers, including the ability to transform into animals and objects.<br> <br> He is a skilled fighter, capable of defeating the best warriors of heaven. His hair has magical properties, capable of making copies of himself or transforming into various weapons, animals and other things. He has partial weather manipulation skills, can freeze people in place, and can become invisible.[4]
 
 The supernatural abilities displayed by Wukong and some other characters were widely thought of as "magic powers" by readers at the time of Journey to the West's writing,[5] without much differentiation between them despite the various religious traditions that inspired them and their different and varied functions, and were often translated as such in non-Chinese versions of the book.
 </h4>
+  </h4>
 
+  <iframe src="https://giphy.com/embed/QDsSjLSUCnPVNRiOjT" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/NVIDIA-GeForce-nvidia-wukong-black-myth-QDsSjLSUCnPVNRiOjT"></a></p>
 
-<iframe src="https://giphy.com/embed/QDsSjLSUCnPVNRiOjT" width="480" height="269" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/NVIDIA-GeForce-nvidia-wukong-black-myth-QDsSjLSUCnPVNRiOjT"></a></p>
+  <h3>Nice clip of the game</h3>
 
-<h3>
-Nice clip of the game
-</h3>
+  <br><br><br> <br>
 
-<br><br><br> <br>
-
-
-
-
-<h1>
-Yaoguais
-</h1>
-
-<h4>
-Yaoguai (Chinese: 妖怪; pinyin: yāoguài) represent a broad and diverse class of ambiguous creatures in Chinese folklore and mythology defined by the possession of supernatural powers and by having attributes that partake of the quality of the weird, the strange or the unnatural. They are especially associated with transformation and enchantment. They often dwell in remote areas or on the fringes of civilization where they produce all manner of unexplainable phenomena and mischief. They often have predatory or malevolent tendencies.<br><br><br>
+  <h1 id="yaoguais">Yaoguais</h1>
+  <h4>
+    Yaoguai (Chinese: 妖怪; pinyin: yāoguài) represent a broad and diverse class of ambiguous creatures in Chinese folklore and mythology  defined by the possession of supernatural powers and by having attributes that partake of the quality of the weird, the strange or the unnatural. They are especially associated with transformation and enchantment. They often dwell in remote areas or on the fringes of civilization where they produce all manner of unexplainable phenomena and mischief. They often have predatory or malevolent tendencies.<br><br><br>
 
 Yaoguai vary considerably from one another in appearance and powers, and depending on particular individual or type, as being capable of shapeshifting, creating illusions, hypnosis, controlling minds, causing disease, clairvoyance, and draining the life force of mortals.<br><br><br>
 
@@ -112,26 +163,18 @@ While yaoguai are not evil in the sense Western demons are, they are usually wei
 
 Yaoguai are popular staples of modern Chinese fiction, appearing in books, movies and comics. The have also begun to appear in video games.
 
-
-</h4>
-
+  </h4>
 
 
+ <div class="slider-container">
+    <div class="slider-wrapper">
+      <img src="https://via.placeholder.com/600x300/FF5733/FFFFFF?text=Image+1" alt="Image 1" class="slide">
+      <img src="https://via.placeholder.com/600x300/33A1FF/FFFFFF?text=Image+2" alt="Image 2" class="slide">
+      <img src="https://via.placeholder.com/600x300/FF33A1/FFFFFF?text=Image+3" alt="Image 3" class="slide">
+    </div>
+  </div>
 
-
-
-</body>
-
-</html><html>
-<head>
-  <style>
-     body{
-         text-align: center;
-         background-image: linear-gradient(rgb(227, 6, 6), rgb(241, 237, 0),rgb(227, 6, 6));
-         min-width: 100%;
-         min-height: 100%;
 
 
 </body>
 </html>
-
